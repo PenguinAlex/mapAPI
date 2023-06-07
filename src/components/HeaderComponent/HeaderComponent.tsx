@@ -7,7 +7,7 @@ import {
     ActionIcon,
     ColorScheme,
     useMantineColorScheme,
-    Container,
+    Container, Text,
 } from '@mantine/core';
 import {useClickOutside, } from '@mantine/hooks';
 import {IconChevronDown, IconMoonStars, IconSun,} from '@tabler/icons-react';
@@ -17,7 +17,7 @@ import logo from '../../assets/logo.svg'
 import {FC, useState} from "react";
 
 interface HeaderSearchProps {
-    links: { link: string; label: string; links: { link: string; label: string }[] }[];
+    links: { link: string; label: string; links?: { link: string; label: string }[] }[];
     colorScheme?: ColorScheme,
     toggleColorScheme?: (colorScheme?: ColorScheme) => void;
 }
@@ -40,15 +40,14 @@ const HeaderComponent:FC<HeaderSearchProps> = ({ links }) => {
             return (
                 <Menu key={link.label} trigger="hover" transitionProps={{ exitDuration: 0 }} withinPortal>
                     <Menu.Target>
-                        <Link
-                            to={link.link}
+                        <Text
                             className={classes.link}
                         >
                             <Center>
                                 <span className={classes.linkLabel}>{link.label}</span>
                                 <IconChevronDown size="0.9rem" stroke={1.5} />
                             </Center>
-                        </Link>
+                        </Text>
                     </Menu.Target>
                     <Menu.Dropdown>{menuItems}</Menu.Dropdown>
                 </Menu>

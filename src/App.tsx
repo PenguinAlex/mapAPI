@@ -9,13 +9,19 @@ import {useState} from "react";
 
 
 function App() {
-    const [colorScheme, setColorScheme] = useState<ColorScheme>('light');
+    const [colorScheme, setColorScheme] = useState<ColorScheme>('dark');
     const toggleColorScheme = (value?: ColorScheme) => setColorScheme(value || (colorScheme === 'dark' ? 'light' : 'dark'));
 
  const links = [
-     {link: '/', label: 'Главная', links: null},
-     {link: '/about', label: 'О нас', links: null},
-     {link: '/contacts', label: 'Контакты', links: null},
+     {link: '/', label: 'Главная'},
+     {link: '/about', label: 'О нас'},
+     {link: '/contacts', label: 'Контакты'},
+     {link: '', label: 'Контакты', links:[
+             {link: '/rent', label: 'Аренда'},
+             {link: '/photos', label: 'Съёмка 360'},
+             {link: '/shop', label: 'Магазин'},
+             {link: '/dev', label: 'Разработка'},
+         ]},
  ]
     const data = [
         {
