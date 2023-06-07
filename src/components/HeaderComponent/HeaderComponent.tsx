@@ -33,10 +33,9 @@ const HeaderComponent:FC<HeaderSearchProps> = ({ links }) => {
 
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
-            <Menu.Item key={item.link}>
-                <Link to={item.link}>
+            <Menu.Item key={item.link} component={Link} to={item.link}>
+
                     {link.label}
-                </Link>
             </Menu.Item>
         ));
 

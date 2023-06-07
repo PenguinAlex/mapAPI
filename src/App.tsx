@@ -50,7 +50,7 @@ function App() {
               primaryColor: colorScheme === 'dark'? 'dark': 'gray',
           }}>
               <HeaderComponent links={links} />
-              <main style={{backgroundColor: colorScheme === 'dark'? '#333': '#FFF'}}>
+              <main style={{backgroundColor: colorScheme === 'dark'? '#333': '#FFF', minHeight: '100vh'}}>
                   <Routes>
                       <Route path='/' element={<Home/>}/>
                       <Route path='/about' element={<About/>}/>
