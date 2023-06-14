@@ -2,6 +2,7 @@ import {MainHeroHeader} from "../components/HeroHeaders/MainHeroHeader/MainHeroH
 import {Button} from "@mantine/core";
 import MainHeroDescription from "../components/HeroHeaders/MainHeroDescription/MainHeroDescription.tsx";
 import Gallary from "../components/Gallary/Gallary.tsx";
+import Tiledmap from "../components/Tiledmap/Tiledmap.tsx";
 
 const Home = () => {
     return (
@@ -10,7 +11,7 @@ const Home = () => {
             <MainHeroDescription/>
             <Gallary/>
             <Button/>
-
+            <Tiledmap/>
         </div>
     );
 };
