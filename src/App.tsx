@@ -1,11 +1,13 @@
 import {Route, Routes} from "react-router-dom";
 import HeaderComponent from "./components/HeaderComponent/HeaderComponent.tsx";
-import FooterComponent from "./components/FooterComponent/FooterComponent.tsx";
 import Home from "./pages/Home.tsx";
 import About from "./pages/About.tsx";
 import Contacts from "./pages/Contacts.tsx";
 import {ColorScheme, ColorSchemeProvider, MantineProvider} from "@mantine/core";
 import {useState} from "react";
+import NavMenuComponent from "./components/NavMenuComponent/NavMenuComponent.tsx";
+import Events from "./pages/Events.tsx";
+import Projects from "./pages/Projects.tsx";
 
 
 function App() {
@@ -50,14 +52,16 @@ function App() {
               primaryColor: colorScheme === 'dark'? 'dark': 'gray',
           }}>
               <HeaderComponent links={links} />
-              <main style={{backgroundColor: colorScheme === 'dark'? '#333': '#FFF', minHeight: '100vh'}}>
+              <NavMenuComponent/>
+              <main style={{backgroundColor: colorScheme === 'dark'? '#333': '#FFF', height: '100vh', display:"flex", alignItems: "center", justifyContent:"center"}}>
                   <Routes>
                       <Route path='/' element={<Home/>}/>
+                      <Route path='/events' element={<Events/>}/>
+                      <Route path='/projects' element={<Projects/>}/>
                       <Route path='/about' element={<About/>}/>
                       <Route path='/contacts' element={<Contacts/>}/>
                   </Routes>
               </main>
-              <FooterComponent data={data}/>
           </MantineProvider>
       </ColorSchemeProvider>
 

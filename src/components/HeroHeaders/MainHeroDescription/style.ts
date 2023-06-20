@@ -6,6 +6,7 @@ export const useStyles = createStyles((theme) => ({
         justifyContent: 'space-between',
         paddingTop: `calc(${theme.spacing.xl} * 4)`,
         paddingBottom: `calc(${theme.spacing.xl} * 4)`,
+
     },
 
     content: {

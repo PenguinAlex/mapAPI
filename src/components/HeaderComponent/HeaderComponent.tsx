@@ -7,7 +7,7 @@ import {
     ActionIcon,
     ColorScheme,
     useMantineColorScheme,
-    Container, Text,
+     Text,
 } from '@mantine/core';
 import {useClickOutside, } from '@mantine/hooks';
 import {IconChevronDown, IconMoonStars, IconSun,} from '@tabler/icons-react';
@@ -70,9 +70,10 @@ const HeaderComponent:FC<HeaderSearchProps> = ({ links }) => {
 
     return (
         <Header height={56} className={classes.header}   >
-            <Container>
                 <div className={classes.inner}>
-                    <img className={classes.logo} src={logo} height='60%'/>
+                    <Link to='/'>
+                        <img className={classes.logo} src={logo} height='28px'/>
+                    </Link>
                     <Group spacing={5} className={classes.links}>
 
                         {items}
@@ -123,7 +124,6 @@ const HeaderComponent:FC<HeaderSearchProps> = ({ links }) => {
                     </Menu>
 
                 </div>
-            </Container>
 
         </Header>
     );

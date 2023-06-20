@@ -1,11 +1,12 @@
 import YouTube from "react-youtube";
+import {Container} from "@mantine/core";
 
 const About = () => {
     return (
-        <div>
+        <Container>
             <YouTube videoId='2CQuv77YWOA'/>
 
-        </div>
+        </Container>
     );
 };
 

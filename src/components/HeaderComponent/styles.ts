@@ -4,6 +4,7 @@ export const useStyles = createStyles((theme) => ({
     header: {
         backgroundColor: theme.fn.variant({ variant: 'filled', color: theme.primaryColor }).background,
         borderBottom: 0,
+        position: "sticky"
     },
 
     inner: {
