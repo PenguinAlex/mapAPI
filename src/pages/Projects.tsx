@@ -1,10 +1,9 @@
+import Tiledmap from "../components/Tiledmap/Tiledmap.tsx";
 
 
 const Projects = () => {
     return (
-        <div>
-
-        </div>
+            <Tiledmap/>
     );
 };
 
