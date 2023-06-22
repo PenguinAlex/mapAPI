@@ -532,15 +532,15 @@
     "@jridgewell/sourcemap-codec" "1.4.14"
 
 "@mantine/carousel@^6.0.13":
-  version "6.0.13"
-  resolved "https://registry.yarnpkg.com/@mantine/carousel/-/carousel-6.0.13.tgz#e1a47835ca10203aa5a1e76118867e1a27ba70c5"
-  integrity sha512-eFrhcfnB3j2nqkEorciy/2BGVtNnEyWzcSgaGirxQE+M5zucabu9FC9Aeeeaf+XhYWgewOx1+lbu29hJIagDtw==
+  version "6.0.14"
+  resolved "https://registry.yarnpkg.com/@mantine/carousel/-/carousel-6.0.14.tgz#91dd16bf54108dc23bd9be929168adf9ed22b147"
+  integrity sha512-3mITs1jJ3cFL4y/GQQ77LimxbEN8wjsixN1wcH6xQtx5LwD0bkVwXpcjWL6iRTHCUA+9QxPmJzv95nvsL5QfcA==
   dependencies:
-    "@mantine/utils" "6.0.13"
+    "@mantine/utils" "6.0.14"
 
 "@mantine/core@^6.0.13":
   version "6.0.13"
-  resolved "https://registry.yarnpkg.com/@mantine/core/-/core-6.0.13.tgz#f05a952e1e2e3cc6eb24d4d77b6c96a1c23fb0bb"
+  resolved "https://registry.npmjs.org/@mantine/core/-/core-6.0.13.tgz"
   integrity sha512-FjVUGgat2qISV9WD1maVJa81y7H0JjKJ3m0cJj65PzgrXT20hzdEda7S3i4j+a8vUnx+836x5q/yS+RDHvoSlA==
   dependencies:
     "@floating-ui/react" "^0.19.1"
@@ -559,7 +559,7 @@
 
 "@mantine/hooks@^6.0.13":
   version "6.0.13"
-  resolved "https://registry.yarnpkg.com/@mantine/hooks/-/hooks-6.0.13.tgz#d90fa315ee30a900e0d9a460c6bb00c9a65f18e0"
+  resolved "https://registry.npmjs.org/@mantine/hooks/-/hooks-6.0.13.tgz"
   integrity sha512-fHuE3zXo5OP/Q1dMOTnegU6U+tI9GuhO2tgOz6szVuOxrrk0Hzuq1Na9NUSv27HShSRbAfQk+hvyIh+iVV7KXA==
 
 "@mantine/styles@6.0.13":
@@ -574,6 +574,11 @@
   version "6.0.13"
   resolved "https://registry.npmjs.org/@mantine/utils/-/utils-6.0.13.tgz"
   integrity sha512-iqIU9wurqAeccVbWjM0yr1JGne5VP+ob55M03QAXOEN4+ck93VDTjCkZJR2RFhDcs5q0twQFoOmU/gULR8aKIA==
+
+"@mantine/utils@6.0.14":
+  version "6.0.14"
+  resolved "https://registry.yarnpkg.com/@mantine/utils/-/utils-6.0.14.tgz#cafa8b22cc077398bb2c4b8c1eae31490438f2a8"
+  integrity sha512-se+3IXJsNj4wnLMlqc7LiBe74m+JLQJ5o3wEcDtFzaJEtEt1rtw/1q3xKuROkH3xEiauhxQgzsc4gj/AslHy2A==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -2120,7 +2125,7 @@ queue-microtask@^1.2.2:
 
 react-dom@^18.2.0:
   version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
+  resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
   dependencies:
     loose-envify "^1.1.0"
@@ -2206,7 +2211,7 @@ react-youtube@^10.1.0:
 
 react@^18.2.0:
   version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
+  resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
